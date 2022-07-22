@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+            <form #addfriend="ngForm" (ngSubmit)="Addfriend()">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <label for="" class="form-label">NAME</label>
+                  <input type="text" class="form-control" [(ngModel)]="friend.name" name="name">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">FRIENDS NAME</label>
+                    <input type="text" class="form-control" [(ngModel)]="friend.friendname" name="friendname">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">FRIENDS NICKNAME</label>
+                    <input type="text" class="form-control" [(ngModel)]="friend.friendNickname" name="friendNickname">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">DESCRIBE YOUR FRIEND</label>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" [(ngModel)]="friend.DescribeYourFriend" name="DescribeYourFriend"></textarea>
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-danger">SUBMIT</button>
+                </div>
+                
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
